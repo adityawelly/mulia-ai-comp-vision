@@ -21,7 +21,7 @@ class _ScanPageState extends State<ScanPage> {
     _cameras = await availableCameras();
     if (_cameras != null && _cameras!.isNotEmpty) {
       _controller = CameraController(
-        _cameras![0], // Menggunakan kamera belakang
+        _cameras![0],
         ResolutionPreset.medium,
       );
 

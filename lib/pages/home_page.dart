@@ -8,20 +8,21 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue, // Warna AppBar
-        elevation: 4, // Efek bayangan
-        centerTitle: true, // Judul di tengah
+        backgroundColor: Colors.blue,
+        elevation: 4,
+        centerTitle: true,
         title: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assets/icon.png', // Ganti dengan path logo yang sesuai
-              height: 32, // Ukuran logo kecil
+              'assets/icon.png',
+              height: 32,
             ),
             SizedBox(width: 10),
             Text(
               'Mulia Industry',
               style: TextStyle(
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               ),
@@ -34,9 +35,9 @@ class HomePage extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assets/icon.png',
-              width: 120,
-              height: 120,
+              'assets/images/scan.png',
+              width: 350,
+              height: 350,
             ),
             SizedBox(height: 20),
             SizedBox(
@@ -50,10 +51,12 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white,
                   textStyle: TextStyle(fontSize: 24),
                   padding: EdgeInsets.all(16),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12), // Tombol membulat
+                    borderRadius: BorderRadius.circular(12),
                   ),
                 ),
                 child: Text('Scan APD'),
